@@ -38,10 +38,20 @@
          <div class="twelve columns">
 
             <div class="logo">
-               <a href="index.html"><img alt="" src="images/logo.png"></a>
+               <a href="<?php blogInfo('url'); ?>">
+               <div><?php blogInfo('name')?></div>
+               <img alt="" src="images/logo.png">
+               </a>
             </div>
 
+            
             <nav id="nav-wrap">
+               <?php wp_nav_menu(array(
+                  'theme_location' => 'top',
+                  'container' => null,
+                  'menu_class' => 'nav',
+                  'menu_id' => 'nav'
+               )); ?>
 
                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
