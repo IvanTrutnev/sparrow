@@ -4,7 +4,7 @@
     add_action('after_setup_theme', 'theme_register_nav_menu');
 
     function theme_register_nav_menu() {
-        register_nav_menu( 'Top menu', 'Menu in Head' );
+        register_nav_menu( 'top', 'Menu in Head' );
     }
 
     function style_theme() {

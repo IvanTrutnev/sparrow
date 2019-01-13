@@ -44,15 +44,13 @@
                </a>
             </div>
 
-            
             <nav id="nav-wrap">
-               <?php wp_nav_menu(array(
-                  'theme_location' => 'top',
-                  'container' => null,
-                  'menu_class' => 'nav',
-                  'menu_id' => 'nav'
-               )); ?>
-
+             <?php wp_nav_menu(array(
+               'theme_location' => 'top',
+               'container' => null,
+               'menu_class' => 'nav',
+               'menu_id' => 'nav'
+            )); ?>
                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
@@ -75,7 +73,7 @@
                   <li><a href="contact.html">Contact</a></li>
                   <li><a href="styles.html">Features</a></li>
 
-               </ul> <!-- end #nav -->
+               </ul>
 
             </nav> <!-- end #nav-wrap -->
 
