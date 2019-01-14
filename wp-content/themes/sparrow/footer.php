@@ -1,8 +1,13 @@
-<footer>
+<footer id="footer">
 
 <div class="row">
 
    <div class="twelve columns">
+      <?php wp_nav_menu(array(
+         'theme_location' => 'footer',
+         'container' => null,
+         'menu_class' => 'footer-nav'
+      )); ?>
 
       <ul class="footer-nav">
               <li><a href="#">Home.</a></li>

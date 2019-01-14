@@ -7,6 +7,7 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
+	<title>Sparrow - Free Responsive HTML5/CSS3 Template</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,6 +29,9 @@
 </head>
 
 <body>
+   <div class="sidebar-top">
+      <?php dynamic_sidebar('top_sidebar') ?>
+   </div>
    <!-- Header
    ================================================== -->
    <header>
