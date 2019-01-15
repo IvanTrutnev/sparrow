@@ -3,6 +3,11 @@
     add_action('wp_footer', 'scripts_theme');
     add_action('after_setup_theme', 'theme_register_nav_menu');
     add_action( 'widgets_init', 'register_my_widgets' );
+    add_filter( 'document_title_separator', 'set_separator' );
+    function set_separator( $sep ){
+        $sep = '/';
+        return $sep;
+    }
 
     function register_my_widgets(){
         register_sidebar( array(
